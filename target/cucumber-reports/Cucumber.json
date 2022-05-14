@@ -1,0 +1,118 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-13T14:22:12.301Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1780754300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.myHooks.setUppDriver()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify if user navigate to correct page and click login",
+        "description": "",
+        "id": "check-user-redirect;verify-if-user-navigate-to-correct-page-and-click-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 193949900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.myHooks.takeSnapShot()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1479810400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigate to url",
+            "match": {
+              "location": "stepDefinitions.landingPageSteps.userNavUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 85770700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter \"admin\" and \"admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"admin@123\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.landingPageSteps.userEnterCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98735600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click login",
+            "match": {
+              "location": "stepDefinitions.landingPageSteps.clkLogin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17951200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User redirected to loggedIn Page",
+            "match": {
+              "location": "stepDefinitions.landingPageSteps.userLoggedIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@master"
+          }
+        ]
+      }
+    ],
+    "name": "Check user redirect",
+    "description": "",
+    "id": "check-user-redirect",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/testSteps.feature",
+    "tags": [
+      {
+        "name": "@master",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
