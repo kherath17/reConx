@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-05-13T14:22:12.301Z",
+        "start_timestamp": "2022-05-14T09:37:03.953Z",
         "before": [
           {
             "result": {
-              "duration": 1780754300,
+              "duration": 1970157500,
               "status": "passed"
             },
             "match": {
@@ -22,11 +22,11 @@
         "after": [
           {
             "result": {
-              "duration": 193949900,
+              "duration": 599513800,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.myHooks.takeSnapShot()"
+              "location": "hooks.myHooks.tearDown()"
             }
           }
         ],
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1479810400,
+              "duration": 2632305000,
               "status": "passed"
             },
             "line": 4,
@@ -43,11 +43,22 @@
             "match": {
               "location": "stepDefinitions.landingPageSteps.userNavUrl()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 121757700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.myHooks.takeSnapShot()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 85770700,
+              "duration": 82778400,
               "status": "passed"
             },
             "line": 5,
@@ -65,11 +76,22 @@
               ],
               "location": "stepDefinitions.landingPageSteps.userEnterCredentials(java.lang.String,java.lang.String)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 228623900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.myHooks.takeSnapShot()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 98735600,
+              "duration": 102725200,
               "status": "passed"
             },
             "line": 6,
@@ -77,11 +99,22 @@
             "match": {
               "location": "stepDefinitions.landingPageSteps.clkLogin()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 229176700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.myHooks.takeSnapShot()"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 17951200,
+              "duration": 17952600,
               "status": "passed"
             },
             "line": 7,
@@ -89,6 +122,17 @@
             "match": {
               "location": "stepDefinitions.landingPageSteps.userLoggedIn()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 108695700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.myHooks.takeSnapShot()"
+                }
+              }
+            ],
             "keyword": "Then "
           }
         ],

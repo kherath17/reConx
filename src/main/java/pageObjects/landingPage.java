@@ -13,6 +13,7 @@ public class landingPage extends basePage {
 
 
     public String getPageTitle(){
+
         driver.get("https://conxillium.github.io/AddressManager/login");
         driver.manage().window().maximize();
         String title = driver.getTitle();
