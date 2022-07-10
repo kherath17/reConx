@@ -21,7 +21,7 @@ pipeline{
                 }
                 stage('Generate Report'){
                     steps{
-                        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'src/coverage', reportFiles: 'index.html', reportName: 'HTML Reports', reportTitles: 'coverageReport'])
+                        publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'src/coverage', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'coverageReport'])
                     }
                 }
 
