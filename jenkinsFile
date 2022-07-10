@@ -4,19 +4,19 @@ pipeline{
             stage('Build'){
                 steps{
                         echo "Building the Project"
-                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium clean"
+                        bat "mvn clean"
                     }
                 }
                 stage('Test'){
                     steps{
                         echo "Testing the Project"
-                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium test"
+                        bat "mvn test"
                     }
                 }
                 stage('Compile'){
                     steps{
                         echo "Building the Project"
-                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium compile"
+                        bat "mvn compile"
                     }
                 }
 }
