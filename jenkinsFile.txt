@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+        stages{
+            stage('Build'){
+                steps{
+                        echo "Building the Project"
+                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium clean"
+                    }
+                }
+                stage('Test'){
+                    steps{
+                        echo "Testing the Project"
+                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium test"
+                    }
+                }
+                stage('Compile'){
+                    steps{
+                        echo "Building the Project"
+                        bat "mvn -f C:\\Users\\E-LINE\\Desktop\\GapStars\\reWtiteConxillium compile"
+                    }
+                }
+}
+}
