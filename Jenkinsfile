@@ -1,6 +1,6 @@
 pipeline{
-agent any{
-    //agent {label 'Built-In Node'}
+//agent any{
+    agent {label 'Master'}
         stages{
             stage('Build'){
                 steps{
