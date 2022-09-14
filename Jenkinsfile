@@ -1,6 +1,6 @@
 pipeline{
 //agent any{
-    agent {label 'Master1'}
+    agent {label 'Master'}
         stages{
             stage('Build'){
                 steps{
